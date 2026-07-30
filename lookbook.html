@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lookbook — Bolale</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.lb-img').forEach(el => observer.observe(el));
+});
+</script>
+</head>
+<body class="lookbook-body">
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo-slot">
+      <div class="logo-img-box">
+        <img src="IMG_0925.JPEG" alt="">
+      </div>
+      <div class="site-title">
+        <a href="index.html">
+          Bolale <span class="light">Design lab</span>
+          <small>Addis Ababa · Ethiopia</small>
+        </a>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <!-- <li><a href="shop.html">Shop</a></li> -->
+        <li><a href="lookbook.html" aria-current="page">Lookbook</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!-- ── Cover ── -->
+<section class="lb-cover">
+  <div class="lb-cover-img">“Every piece from Bolale is made to carry presence, wherever you go.</div>
+  <div class="lb-cover-inner">
+    <p class="lb-issue">Issue 01 &nbsp;·&nbsp; 2026</p>
+    <h1 class="lb-cover-title">Bolale<br><em>Volume I</em></h1>
+    <p class="lb-cover-sub">Addis Ababa </p>
+  </div>
+  <span class="lb-scroll-hint">Scroll to view</span>
+</section>
+
+
+<!-- ── Chapter 01 ── -->
+<div class="lb-chapter">
+  <span class="lb-chapter-num">01</span>
+  <div class="lb-chapter-text">
+    <h2>Room to Breathe</h2>
+    <p>Wide silhouettes </p>
+  </div>
+</div>
+
+<!-- Layout A: tall portrait left, two landscapes right -->
+<div class="lb-grid layout-a">
+  <div class="lb-img portrait">
+    <div class="slot">Portrait image</div>
+        <img src="IMG_6767.JPG" alt="">
+
+    <span class="caption">Look 01</span>
+  </div>
+  <div class="lb-img landscape">
+    <img src="IMG_6766.JPG" alt="">
+    <div class="slot">Landscape image</div>
+    <span class="caption">Look 02</span>
+  </div>
+  <div class="lb-img landscape">
+    <img src="IMG_6762.JPG" alt="">
+    <div class="slot">Landscape image</div>
+    <span class="caption">Look 03</span>
+  </div>
+</div>
+
+
+
+
+
+<!-- ── Chapter 02 ── -->
+<div class="lb-chapter">
+  <span class="lb-chapter-num">02</span>
+  <div class="lb-chapter-text">
+    <h2>The Studio</h2>
+    <p>Inside the studio · Addis Ababa</p>
+  </div>
+</div>
+
+<!-- Layout B: full-width landscape -->
+<div class="lb-grid layout-b">
+  <div class="lb-img landscape" style="aspect-ratio: 21/9;">
+    <img src="IMG_6932.JPG" alt="">
+    <div class="slot">Wide landscape image</div>
+    <span class="caption">Addis Ababa, 2025</span>
+  </div>
+</div>
+
+<!-- Layout C: three equal -->
+<div class="lb-grid layout-c" style="margin-top: 6px;">
+  <div class="lb-img square">
+    <div class="slot">Square image</div>
+    <img src="IMG_6822.JPG" alt="">
+    <span class="caption">Look 04</span>
+  </div>
+  <div class="lb-img square">
+    <div class="slot">Square image</div>
+    <img src="IMG_6951.JPG" alt="">
+    <span class="caption">Look 05</span>
+  </div>
+  <div class="lb-img square">
+    <div class="slot">Square image</div>
+    <img src="IMG_6818.JPG" alt="">
+    <span class="caption">Look 06</span>
+  </div>
+</div>
+
+
+<!-- ── Chapter 03 ── -->
+<div class="lb-chapter">
+  <span class="lb-chapter-num">03</span>
+  <div class="lb-chapter-text">
+    <h2>Layered</h2>
+    <p>Outerwear · Texture · Volume</p>
+  </div>
+</div>
+
+<!-- Layout D: two portraits -->
+<div class="lb-grid layout-d">
+  <div class="lb-img tall">
+    <div class="slot">Portrait image</div>
+    <img src="IMG_7001.JPG" alt="">
+    <span class="caption">Look 07</span>
+  </div>
+  <div class="lb-img tall">
+    <div class="slot">Portrait image</div>
+    <img src="IMG_6999.JPG" alt="">
+    <span class="caption">Look 08</span>
+  </div>
+</div>
+
+<!-- Layout E: small + big -->
+<div class="lb-grid layout-e" style="margin-top: 6px;">
+  <div class="lb-img portrait">
+    <div class="slot">Portrait image</div>
+    <img src="IMG_6812.JPG" alt="">
+    <span class="caption">Look 09</span>
+  </div>
+  <div class="lb-img landscape">
+    <div class="slot">Landscape image</div>
+    <img src="IMG_6814.JPG" alt="">
+    <span class="caption">Look 10</span>
+  </div>
+</div>
+
+
+<!-- End -->
+<div class="lb-end">
+  <p>End of Volume I</p>
+  <a href="contact.html">Contact to shop</a>
+</div>
+
+<footer class="site-footer">
+  <p>© Bolale </span></p>
+</footer>
+
+</body>
+</html>
